@@ -1,12 +1,12 @@
 # Professional Python Calculator
 
-![Build Status](https://github.com/Aniket-NJIT/professional-calculator-cli.git/actions/workflows/python-app.yml/badge.svg)
+![Build Status](https://github.com/Aniket-NJIT/professional-calculator-cli.git/actions/workflows/main.yml/badge.svg)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![Code Quality](https://img.shields.io/badge/pylint-10%2F10-brightgreen)
 
 A modular, professional-grade command-line calculator application built in Python. This project demonstrates clean architecture, design patterns, and strict software engineering best practices, including 100% test coverage and continuous integration (CI/CD).
 
-## 🚀 Features
+## Features
 
 - **REPL Interface**: Interactive command-line interface (Read-Eval-Print Loop) for continuous calculation.
 - **Modular Architecture**: distinct separation of concerns between Operations, Calculation logic, History management, and Commands.
@@ -18,11 +18,11 @@ A modular, professional-grade command-line calculator application built in Pytho
   - **10/10 Code Quality** score with `pylint`.
   - **CI/CD Pipeline** using GitHub Actions.
 
-## 🛠️ Installation & Setup
+## Installation & Setup
 
 1. **Clone the Repository**
    ```bash
-   git clone [https://github.com/Aniket-NJIT/professional-calculator-cli.git](https://github.com/Aniket-NJIT/professional-calculator-cli.git)
+   git clone https://github.com/Aniket-NJIT/professional-calculator-cli.git
    cd professional-calculator-cli
    ```
 
