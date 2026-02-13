@@ -1,6 +1,6 @@
 # Professional Python Calculator
 
-![Build Status](https://github.com/Aniket-NJIT/professional-calculator-cli.git/actions/workflows/main.yml/badge.svg)
+![Build Status](https://github.com/Aniket-NJIT/professional-calculator-cli/actions/workflows/main.yml/badge.svg)
 ![Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![Code Quality](https://img.shields.io/badge/pylint-10%2F10-brightgreen)
 
