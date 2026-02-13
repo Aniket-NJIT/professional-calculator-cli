@@ -32,3 +32,4 @@ class Calculator:
         if Calculator.history:
             return Calculator.history[-1]
         return None
+        

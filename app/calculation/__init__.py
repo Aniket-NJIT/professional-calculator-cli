@@ -26,3 +26,4 @@ class Calculation:
     def __repr__(self):
         """String representation for debugging/history."""
         return f"Calculation({self.a}, {self.b}, {self.operation.__name__})"
+        
