@@ -34,5 +34,5 @@ jobs:
         
     - name: Test with pytest and Enforce Coverage
       run: |
-        # This will fail if coverage is under 100% due to pytest.ini settings
-        pytest
+        # Run pytest as a module so it finds the 'app' package
+        python -m pytest
