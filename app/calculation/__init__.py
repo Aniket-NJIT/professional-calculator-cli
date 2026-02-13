@@ -5,7 +5,7 @@ This module defines the Calculation class and the CalculationFactory.
 from typing import Callable
 from app.operation import add, sub, mul, div
 
-class Calculation:
+class Calculation: # pylint: disable=too-few-public-methods
     """
     Represents a single calculation entity.
     """
@@ -42,7 +42,6 @@ class CalculationFactory:
         try:
             operation_func = operations[op_name]
             return Calculation(a, b, operation_func)
-        except KeyError:
-            # Re-raising as ValueError to be caught by the REPL
-            raise ValueError(f"Unknown operation: {op_name}")
-
+        except KeyError as exc:
+            # Fixes W0707: Explicitly re-raising with 'from exc'
+            raise ValueError(f"Unknown operation: {op_name}") from exc
