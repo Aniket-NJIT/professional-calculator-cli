@@ -1,0 +1,4 @@
+pytest
+pytest-cov
+pylint
+pandas # Optional, but good for data handling if needed later
