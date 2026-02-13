@@ -4,7 +4,7 @@ Implements the Command Pattern for handling REPL operations.
 """
 from abc import ABC, abstractmethod
 
-class Command(ABC):
+class Command(ABC):  # pylint: disable=too-few-public-methods
     """
     Abstract base class for all commands.
     """
@@ -13,7 +13,6 @@ class Command(ABC):
         """
         Executes the command.
         """
-        pass  # pragma: no cover
 
 class CommandHandler:
     """
