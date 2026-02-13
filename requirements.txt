@@ -1,4 +1,5 @@
 pytest
 pytest-cov
 pylint
+faker
 pandas # Optional, but good for data handling if needed later
