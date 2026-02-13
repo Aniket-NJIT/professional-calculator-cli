@@ -1,37 +1,23 @@
 import sys
 from decimal import Decimal, InvalidOperation
 from app.calculator import Calculator
-from app.calculation import Calculation
-from app.operation import add, sub, mul, div
+from app.calculation import CalculationFactory
 
 def calculate_and_print(a, b, operation_name):
     """
-    Helper to perform calculation and print result.
+    Helper to perform calculation using the Factory and print result.
     """
-    operations_map = {
-        'add': add,
-        'subtract': sub,
-        'multiply': mul,
-        'divide': div
-    }
-    
-    # EAFP: Try to get the operation
     try:
-        operation_func = operations_map[operation_name]
-    except KeyError:
-        print(f"Invalid operation: {operation_name}")
-        return
-
-    # LBYL: Check inputs before creating object. Here we wrap in try/except logic in the main loop for data types
-    try:
-        calculation = Calculation.create(a, b, operation_func)
+        # Use CalculationFactory (Assignment Requirement)
+        calculation = CalculationFactory.create_calculation(a, b, operation_name)
         result = calculation.perform()
         Calculator.add_calculation(calculation)
         print(f"The result of {a} {operation_name} {b} is equal to {result}")
     except ZeroDivisionError:
         print("Error: Division by zero.")
     except ValueError as e:
-         print(f"Error: {e}")
+        # Handles both invalid operations and invalid numeric inputs
+        print(f"Error: {e}")
 
 def main(): # pragma: no cover
     """
