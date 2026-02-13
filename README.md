@@ -77,7 +77,7 @@ A modular, professional-grade command-line calculator application built in Pytho
     4. Strategy Pattern (Implied)
     The operations (add, sub, mul, div) act as interchangeable strategies that can be passed into the Calculation engine.
 
-8. **Testing & Quality**
+8. **Testing and Quality**
     This project enforces strict quality gates. The build will fail if test coverage drops below 100% or if code quality issues are introduced.
     To run the full test suite and check coverage:
     ```bash
