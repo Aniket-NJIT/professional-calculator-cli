@@ -1,3 +1,7 @@
+"""
+Calculator module.
+Manages the history of calculations and provides a facade for the application.
+"""
 from typing import List
 from app.calculation import Calculation
 
@@ -21,7 +25,7 @@ class Calculator:
     def clear_history():
         """Clears the history."""
         Calculator.history.clear()
-        
+
     @staticmethod
     def get_latest() -> Calculation:
         """Gets the latest calculation. Returns None if empty."""

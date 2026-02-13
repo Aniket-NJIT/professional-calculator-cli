@@ -28,7 +28,8 @@ jobs:
         
     - name: Lint with pylint
       run: |
-        # Run pylint on app folder
+        # Set PYTHONPATH so pylint finds the 'app' module
+        export PYTHONPATH=$PYTHONPATH:$(pwd)
         pylint app/
         
     - name: Test with pytest and Enforce Coverage

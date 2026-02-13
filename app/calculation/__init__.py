@@ -1,3 +1,7 @@
+"""
+Calculation module.
+Wraps the operands and operation into a single object.
+"""
 from typing import Callable
 from app.operation import add, sub, mul, div
 
@@ -20,5 +24,5 @@ class Calculation:
         return self.operation(self.a, self.b)
 
     def __repr__(self):
-        """String representation for debugging."""
+        """String representation for debugging/history."""
         return f"Calculation({self.a}, {self.b}, {self.operation.__name__})"
